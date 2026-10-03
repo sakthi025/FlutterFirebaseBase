@@ -53,6 +53,7 @@ export const onUserCreated = onDocumentCreated("users/{userId}", async (event) =
   // Set default settings/roles on user creation
   return snapshot.ref.set(
     {
+      uid: userId,
       role: data.role || "standard_user",
       initializedAt: admin.firestore.FieldValue.serverTimestamp(),
       appPermissions: ["basic_access"],
