@@ -1,0 +1,8 @@
+{
+  "environment": "prod",
+  "appName": "FlutterFirebaseBase",
+  "apiBaseUrl": "https://api.example.com/v1",
+  "enableLogging": false,
+  "enableCrashlytics": true,
+  "enablePerformanceMonitoring": true
+}

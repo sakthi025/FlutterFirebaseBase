@@ -1,0 +1,8 @@
+{
+  "environment": "staging",
+  "appName": "FlutterFirebaseBase (Staging)",
+  "apiBaseUrl": "https://api-staging.example.com/v1",
+  "enableLogging": true,
+  "enableCrashlytics": true,
+  "enablePerformanceMonitoring": true
+}
