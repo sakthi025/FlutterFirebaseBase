@@ -17,13 +17,11 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'npm'
-          cache-dependency-path: 'functions/package-lock.json'
 
       - name: Install Cloud Functions Dependencies
         working-directory: functions
         run: |
-          npm ci || npm install
+          npm install
           npm run build
 
       - name: Setup Flutter SDK (for Web Hosting Deploy)
@@ -38,8 +36,8 @@ jobs:
           flutter build web --release
 
       - name: Deploy to Firebase
-        uses: FirebaseExtended/action-hosting-deploy@v0
         if: env.FIREBASE_SERVICE_ACCOUNT != ''
+        uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT }}'
