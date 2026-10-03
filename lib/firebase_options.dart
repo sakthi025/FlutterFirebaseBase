@@ -4,8 +4,9 @@ import 'package:flutter/foundation.dart'
 
 /// Default [FirebaseOptions] for use with your Firebase apps.
 ///
-/// Configure your real credentials via FlutterFire CLI:
-/// `flutterfire configure --project=<YOUR_FIREBASE_PROJECT_ID>`
+/// Connected Firebase Project: antigrav-proj-efbaa
+/// To regenerate fresh platform keys directly from Google Cloud:
+/// `flutterfire configure --project=antigrav-proj-efbaa`
 class DefaultFirebaseOptions {
   static FirebaseOptions get currentPlatform {
     if (kIsWeb) {
@@ -31,25 +32,25 @@ class DefaultFirebaseOptions {
     apiKey: 'AIzaSyDemoKeyWebForFlutterFirebaseBase',
     appId: '1:100000000000:web:abcdef1234567890',
     messagingSenderId: '100000000000',
-    projectId: 'flutter-firebase-base-demo',
-    authDomain: 'flutter-firebase-base-demo.firebaseapp.com',
-    storageBucket: 'flutter-firebase-base-demo.appspot.com',
+    projectId: 'antigrav-proj-efbaa',
+    authDomain: 'antigrav-proj-efbaa.firebaseapp.com',
+    storageBucket: 'antigrav-proj-efbaa.firebasestorage.app',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
     apiKey: 'AIzaSyDemoKeyAndroidForFlutterFirebaseBase',
     appId: '1:100000000000:android:abcdef1234567890',
     messagingSenderId: '100000000000',
-    projectId: 'flutter-firebase-base-demo',
-    storageBucket: 'flutter-firebase-base-demo.appspot.com',
+    projectId: 'antigrav-proj-efbaa',
+    storageBucket: 'antigrav-proj-efbaa.firebasestorage.app',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
     apiKey: 'AIzaSyDemoKeyIosForFlutterFirebaseBase',
     appId: '1:100000000000:ios:abcdef1234567890',
     messagingSenderId: '100000000000',
-    projectId: 'flutter-firebase-base-demo',
-    storageBucket: 'flutter-firebase-base-demo.appspot.com',
+    projectId: 'antigrav-proj-efbaa',
+    storageBucket: 'antigrav-proj-efbaa.firebasestorage.app',
     iosBundleId: 'com.example.flutterFirebaseBase',
   );
 
@@ -57,8 +58,8 @@ class DefaultFirebaseOptions {
     apiKey: 'AIzaSyDemoKeyMacosForFlutterFirebaseBase',
     appId: '1:100000000000:ios:abcdef1234567890',
     messagingSenderId: '100000000000',
-    projectId: 'flutter-firebase-base-demo',
-    storageBucket: 'flutter-firebase-base-demo.appspot.com',
+    projectId: 'antigrav-proj-efbaa',
+    storageBucket: 'antigrav-proj-efbaa.firebasestorage.app',
     iosBundleId: 'com.example.flutterFirebaseBase',
   );
 
@@ -66,8 +67,8 @@ class DefaultFirebaseOptions {
     apiKey: 'AIzaSyDemoKeyWindowsForFlutterFirebaseBase',
     appId: '1:100000000000:web:abcdef1234567890',
     messagingSenderId: '100000000000',
-    projectId: 'flutter-firebase-base-demo',
-    authDomain: 'flutter-firebase-base-demo.firebaseapp.com',
-    storageBucket: 'flutter-firebase-base-demo.appspot.com',
+    projectId: 'antigrav-proj-efbaa',
+    authDomain: 'antigrav-proj-efbaa.firebaseapp.com',
+    storageBucket: 'antigrav-proj-efbaa.firebasestorage.app',
   );
 }

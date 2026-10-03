@@ -1,6 +1,7 @@
 {
   "environment": "prod",
   "appName": "FlutterFirebaseBase",
+  "projectId": "antigrav-proj-efbaa",
   "apiBaseUrl": "https://api.example.com/v1",
   "enableLogging": false,
   "enableCrashlytics": true,
